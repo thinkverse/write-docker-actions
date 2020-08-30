@@ -17,8 +17,14 @@ The `cat-facts` action uses `Python 3` to fetch cat facts from the [catfact] API
 
 The `issue-maker` action uses `node` and the [actions/toolkit] to accept a `title`, `fact` and a `token` to create a new issue with that title and fact.
 
+## How to use the Actions
+
+In this repository the Actions work on the `pull_request` event, specifically when a `pull_request` gets `labeled` with a `label`.<br>
+The workflow file can be found in the usual [.github/workflows] folder.
+
 [gitHub actions: write docker container actions]: https://lab.github.com/githubtraining/github-actions:-write-docker-container-actions
 [learning lab]: https://lab.github.com
 [.github/actions]: https://github.com/thinkverse/write-docker-actions/tree/HEAD/.github/actions
 [catfact]: https://catfact.ninja/
 [actions/toolkit]: https://github.com/actions/toolkit
+[.github/workflows]: https://github.com/thinkverse/write-docker-actions/tree/HEAD/.github/workflows

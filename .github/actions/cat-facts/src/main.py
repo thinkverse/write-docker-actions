@@ -2,7 +2,7 @@ import requests
 import random
 import sys
 
-cat_url = "https://catfact.ninja/facts?limit=25&max_length=40"
+cat_url = "https://catfact.ninja/facts?limit=50"
 r = requests.get(cat_url)
 r_obj_list = r.json()["data"]
 

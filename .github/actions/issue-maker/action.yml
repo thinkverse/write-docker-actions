@@ -1,0 +1,22 @@
+name: "issue maker"
+description: "create an issue with a fact as the body"
+
+inputs:
+  title:
+    description: "A title for your issue"
+    required: true
+    default: "You can change this title"
+
+  fact:
+    description: "The provided fact retreived from a previous action"
+    required: true
+    default: "You can change this fact"
+
+  token:
+    description: "Authentication token, use secrets.GITHUB_TOKEN"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+    

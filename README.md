@@ -1,4 +1,4 @@
-# Welcome to your course 🎉
+# Welcome to your course 🎉🎉
 
 ### Getting started
 

@@ -4,7 +4,7 @@ import sys
 
 cat_url = "https://cat-fact.herokuapp.com/facts"
 r = requests.get(cat_url)
-r_obj_list = r.json()["all"]
+r_obj_list = r.json(["all"])
 
 fact_list = []
 

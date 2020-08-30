@@ -2,14 +2,14 @@ import requests
 import random
 import sys
 
-cat_url = "https://cat-fact.herokuapp.com/facts"
+cat_url = "https://catfact.ninja/facts?limit=25&max_length=40"
 r = requests.get(cat_url)
-r_obj_list = r.json(["all"])
+r_obj_list = r.json()["data"]
 
 fact_list = []
 
 for fact in r_obj_list:
-    fact_list.append(fact["text"])
+    fact_list.append(fact["fact"])
 
 
 def select_random_fact(fact_arr):
